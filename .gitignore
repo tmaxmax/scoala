@@ -31,3 +31,6 @@
 *.out
 *.in
 *.app
+
+target
+./**/target
