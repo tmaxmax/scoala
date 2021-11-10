@@ -29,7 +29,7 @@ int main() {
   };
 
   for (auto i = 0; i < numar_varfuri; i++) {
-    for (auto j = 0; j < numar_muchii; j++) {
+    for (auto j = i + 1; j < numar_muchii; j++) {
       if (graf[i][j] && (este_muchie_de_eliminat(i, j) || este_muchie_de_eliminat(j, i))) {
         numar_muchii--;
         graf[i][j] = graf[j][i] = false;
